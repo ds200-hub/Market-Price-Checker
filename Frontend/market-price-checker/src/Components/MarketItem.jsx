@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import "../Css/MarketItem.Css";
+import "../Css/MarketItem.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { roleContext } from "./ShopkeeperWrapper";
