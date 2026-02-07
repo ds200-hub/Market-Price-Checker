@@ -16,6 +16,7 @@ const url = process.env.MONGO_URL;
 
 const allowedOrigin = [
     "http://localhost:5173",
+    "https://market-price-checker-omega.vercel.app",
 ];
 
 app.use(cors({
@@ -29,7 +30,7 @@ app.use(cors({
     },
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
-}))
+}));
 
 app.use(cookieParser());
 app.use(express.json());
