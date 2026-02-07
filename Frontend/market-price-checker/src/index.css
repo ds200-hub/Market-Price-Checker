@@ -1,0 +1,548 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ebecf0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive css */
+
+@media screen and (min-width: 1360px) {
+  .hamburgerBtn {
+    display: none;
+  }
+
+  .buttonsDisplay {
+    display: none !important;
+  }
+
+  .btnsAndSearch {
+    display: none !important;
+  }
+
+  .btnsAndSearch2 {
+    display: none !important;
+  }
+
+  .brandName2 {
+    padding-left: 5% !important;
+  }
+}
+
+@media screen and (max-width: 1360px) {
+
+  /* login.css */
+  #bodyPage {
+    width: 35rem;
+  }
+
+  /* navbar.css */
+  .ShopkeeperSearchSection {
+    padding-left: 0% !important;
+    padding-right: 4% !important;
+    justify-content: flex-end !important;
+    width: 20% !important;
+  }
+
+  .brandName {
+    width: 80% !important;
+    padding-left: 5% !important;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .addVege {
+    display: none !important;
+  }
+
+  .searchOuter {
+    display: none !important;
+  }
+
+  .logout {
+    display: none !important;
+  }
+
+  .leftSectionCard {
+    width: 18% !important;
+  }
+
+  .Img {
+    width: 95% !important;
+    border-radius: 20px !important;
+  }
+
+  .centerSectionCard {
+    padding-left: 15px !important;
+  }
+
+  .btnsAndSearch {
+    transform: translateY(-200px);
+  }
+
+  .btnsAndSearch2 {
+    transform: translateY(0px);
+  }
+
+  .searchSection2 {
+    width: 50% !important;
+  }
+
+  .searchOuter2 {
+    width: 400px !important;
+  }
+
+  .brandName2 {
+    width: 50% !important;
+    padding-left: 5.5% !important;
+  }
+
+  .editImagePart img {
+    width: 28rem !important;
+  }
+
+  .emptyImg {
+    width: 28rem !important;
+  }
+
+}
+
+@media screen and (max-width: 991px) {
+  #bodyPage {
+    width: 35rem;
+  }
+
+  .leftSectionCard {
+    width: 20% !important;
+  }
+
+  .Img {
+    width: 95% !important;
+    border-radius: 20px !important;
+  }
+
+  .centerSectionCard {
+    width: 50% !important;
+    padding-left: 15px !important;
+  }
+
+  .rightSectionCard {
+    width: 30% !important;
+  }
+
+  .btnsAndSearch2 {
+    min-height: 190px !important;
+  }
+
+  .box {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+
+  }
+
+  .searchOuterRes {
+    width: 100% !important;
+    height: 70px !important;
+  }
+
+  .secondBox {
+    width: 100% !important;
+    height: 90px !important;
+    justify-content: space-evenly !important;
+  }
+
+  .box2 {
+    flex-direction: column;
+    height: 150px !important;
+    background-color: #54b9c4;
+  }
+
+  .brandName2 {
+    width: 100% !important;
+    height: 70px !important;
+    padding: 0% !important;
+    flex-direction: row !important;
+    justify-content: center;
+  }
+
+  .name2 {
+    font-size: 40px !important;
+  }
+
+  .searchSection2 {
+    width: 100% !important;
+    height: 70px !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+  }
+
+  .searchOuter2 {
+    width: 600px !important;
+    height: 60px !important;
+  }
+
+  .contentBody {
+    top: 170px !important;
+  }
+
+  .editImagePart img {
+    width: 85% !important;
+    height: 55% !important;
+  }
+
+  .emptyImg {
+    width: 85% !important;
+    height: 55% !important;
+  }
+
+  .editImagePart input {
+    width: 18rem !important;
+  }
+  .editInputBox{
+    width: 22rem !important;
+  }
+  .fileUploadInput{
+    width: 22rem !important;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  #bodyPage {
+    width: 28rem;
+  }
+
+  .namePart {
+    font-size: 28px;
+  }
+
+  .brandName {
+    padding-left: 5% !important;
+  }
+
+  .itemCard {
+    min-height: 500px !important;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftSectionCard {
+    width: 200px !important;
+    height: 200px !important;
+    /* border: 2px solid black; */
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+
+  }
+
+  .Img {
+    width: 95% !important;
+    height: 95% !important;
+    border-radius: 20px;
+  }
+
+  .centerSectionCard {
+    width: 100% !important;
+    height: 150px !important;
+    /* border: 2px solid black; */
+    margin-top: 20px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  .infoPart {
+    font-size: 20px;
+  }
+
+  .rightSectionCard {
+    width: 100% !important;
+    height: 90px !important;
+    /* border: 2px solid black; */
+    margin-top: 0px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .priceSectionShopkeeper {
+    align-items: center !important;
+  }
+
+  .priceSection {
+    align-items: center !important;
+  }
+
+  .price {
+    font-size: 35px !important;
+  }
+
+  .edit {
+    transform: translateY(5px);
+    font-size: 35px !important;
+  }
+
+  .iconSection {
+    padding: 0% !important;
+
+  }
+
+  .iconBoxRed {
+    width: 120px !important;
+    height: 45px !important;
+  }
+
+  .iconBoxGreen {
+    width: 120px !important;
+    height: 45px !important;
+  }
+
+  .deleteIcon {
+    transform: translateY(5px);
+    font-size: 35px !important;
+  }
+
+  .searchSection2 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .editPart {
+    flex-direction: column;
+    height: 655px !important;
+  }
+
+  .editImagePart {
+    width: 100% !important;
+    height: 35rem !important;
+    padding: 0% !important;
+    justify-content: flex-start !important;
+    padding-top: 20px !important;
+  }
+
+  .priceEditPart {
+    width: 100% !important;
+    padding: 0% !important;
+    align-items: center !important;
+  }
+
+  .editImagePart img {
+    width: 25rem !important;
+    height: 200px !important;
+  }
+
+  .emptyImg {
+    width: 25rem !important;
+    height: 200px !important;
+  }
+
+  .editImagePart input {
+    width: 24rem !important;
+  }
+
+}
+
+@media screen and (max-width: 479px) {
+  #bodyPage{
+    width: 20rem;
+    height: 480px !important;
+  }
+  .cartAndName{
+    width: 100% !important;
+  }
+  .vegCart {
+    width: 57px !important;
+    height: 40px !important;
+  }
+  .namePart{
+    font-size: 25px !important;
+  }
+  .loginName{
+    height: 50px !important;
+  }
+  .loginSection{
+    margin-top: 20px !important;
+    height: 380px !important;
+  }
+  .emailBox{
+    height: 40px !important;
+  }
+  .passwordBox{
+    height: 40px !important;
+  }
+  .button{
+    width: 200px !important;
+    height: 40px !important;
+  }
+  .loginParaPart{
+    margin-top: 10px !important;
+    font-size: 17px !important;
+  }
+  .orSection{
+    margin-top: 10px !important;
+  }
+  .guestSection{
+    width: 200px !important;
+    height: 40px !important;
+    margin-top: 7px !important;
+  }
+  #link i{
+    font-size: 17px !important;
+  }
+  #link h1{
+    font-size: 18px !important;
+    margin-right: 10px !important;
+  }
+  .guestInfo{
+    margin-left: 5px;
+  }
+  .paraPart{
+    font-size: 19px !important;
+  }
+
+  .heading {
+    padding-left: 2%;
+  }
+
+  .brandName {
+    padding-left: 2% !important;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .contentBody {
+    width: 100% !important;
+  }
+
+  .itemCard {
+    min-height: 450px !important;
+    border-radius: 0px !important;
+  }
+
+  .price {
+    font-size: 25px !important;
+  }
+
+  .price b {
+    font-size: 35px;
+  }
+
+
+  .edit {
+    transform: translateY(5px);
+    font-size: 25px !important;
+  }
+
+  .iconSection {
+    padding: 0% !important;
+    align-items: center;
+  }
+
+  .iconBoxRed {
+    width: 100px !important;
+    height: 40px !important;
+  }
+
+  .iconBoxGreen {
+    width: 90px !important;
+    height: 70% !important;
+  }
+
+  .deleteIcon {
+    transform: translateY(4px);
+    font-size: 25px !important;
+  }
+
+  .leftSectionCard {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .rightSectionCard {
+    align-items: flex-start;
+    width: 100% !important;
+    height: 100px !important;
+  }
+
+  .box {
+    width: 80% !important;
+  }
+
+  .searchOuterRes {
+    height: 55px !important;
+
+  }
+
+  .crossIcon {
+    width: 40px !important;
+    height: 50px !important;
+  }
+
+  .crossIcon i {
+    font-size: 40px !important;
+  }
+
+  .addIcon {
+    display: none !important;
+  }
+
+  .addVegeRes {
+    width: 110px !important;
+    height: 50px !important;
+    padding: 0px !important;
+  }
+
+  .logoutRes {
+    width: 110px !important;
+    height: 50px !important;
+  }
+
+  .name2 {
+    font-size: 30px !important;
+  }
+
+  .heading {
+    font-size: 30px !important;
+  }
+
+  .editImagePart img {
+    width: 80% !important;
+    height: 200px !important;
+  }
+
+  .editImagePart input {
+    width: 18rem !important;
+  }
+
+  .editInputBox {
+    width: 18rem !important;
+  }
+
+  .fileUploadInput {
+    width: 18rem !important;
+  }
+
+  .editButton {
+    width: 18rem !important;
+  }
+
+  .emptyImg {
+    width: 80% !important;
+    height: 200px !important;
+  }
+}

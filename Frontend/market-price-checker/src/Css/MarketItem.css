@@ -1,0 +1,182 @@
+.contentBody {
+    width: 90%;
+    min-height: 100%;
+    margin: auto;
+    position: relative;
+    top: 130px;
+    padding-bottom: 40px;
+}
+
+.heading {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.itemCard {
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    display: flex;
+    background-color: #fffbfc;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.leftSectionCard {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Img {
+    width: 90%;
+    height: 90%;
+    object-fit: fill;
+    border-radius: 25px;
+}
+
+.centerSectionCard {
+    width: 65%;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.itemName {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.infoPart {
+    margin-top: 10px;
+}
+
+.rightSectionCard {
+    width: 20%;
+    height: 100%;
+}
+
+.priceSection {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.priceSectionShopkeeper {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* padding-left: 40px; */
+}
+
+.edit {
+    font-size: 30px;
+    padding-bottom: 7px;
+}
+
+.edit:hover {
+    cursor: pointer;
+    color: #1F51FF;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 340;
+}
+
+b {
+    font-size: 40px;
+}
+
+.iconSection {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.deleteIcon {
+    font-size: 30px;
+    transform: translateY(10px);
+}
+
+.deleteIcon:hover {
+    cursor: pointer;
+    color: #1F51FF;
+}
+
+.hideDeleteIcon {
+    font-size: 30px;
+    padding-bottom: 7px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+.iconBoxRed {
+    width: 100px;
+    height: 65%;
+    display: flex;
+    background-color: #FBE5E5;
+    border-radius: 20px;
+}
+
+.iconBoxGreen {
+    width: 100px;
+    height: 65%;
+    display: flex;
+    background-color: #D1FAE5;
+    border-radius: 20px;
+}
+
+.leftIcon {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.rightIcon {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+
+.iconRed {
+    font-size: 25px;
+    color: red;
+}
+
+.iconGreen {
+    font-size: 25px;
+    color: green;
+}
+
+.warningDiv {
+    width: 100%;
+    height: 100px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.warningPara {
+    font-size: 60px;
+    color: #54b9c4;
+    font-weight: 600;
+}

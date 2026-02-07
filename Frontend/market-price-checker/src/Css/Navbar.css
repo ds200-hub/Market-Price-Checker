@@ -1,0 +1,236 @@
+.navbar {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    background-color: #54b9c4;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+}
+
+.box2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+}
+
+.brandName {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    font-size: large;
+    color: white;
+}
+
+
+.ShopkeeperSearchSection {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 7%;
+}
+
+.searchOuter {
+    width: 250px;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding-left: 10px;
+    margin-right: 50px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.brandName2 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    font-size: large;
+    color: white;
+}
+
+
+.searchSection2 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.searchOuter2 {
+    width: 600px;
+    height: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding-left: 10px;
+    /* margin-right: 50px; */
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.searchLogo {
+    font-size: 25px;
+    color: #5fc4cf;
+}
+
+.searchInput {
+    width: 90%;
+    height: 100%;
+    font-size: 25px;
+    padding-left: 10px;
+    padding-right: 20px;
+    outline: none;
+    border-radius: 0 15px 15px 0;
+    border: none;
+}
+
+
+
+.addVege {
+    width: 130px;
+    height: 50px;
+    border: none;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0096FF;
+    border-radius: 15px;
+    padding-right: 12px;
+    margin-right: 50px;
+
+}
+
+
+.addIcon {
+    font-size: 33px;
+    color: white;
+    margin-right: 5px;
+}
+
+.add {
+    font-size: 33px;
+    color: white;
+    font-weight: lighter;
+}
+
+.logout {
+    height: 50%;
+    width: 150px;
+}
+
+.logoutbtn {
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    border-radius: 15px;
+    background-color: #0096FF;
+    color: white;
+    outline: none;
+    border: none;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hamburgerBtn {
+    font-size: 40px;
+    color: white;
+}
+
+.btnsAndSearch {
+    width: 100%;
+    height: 100px;
+    background-color: #54b9c4;
+    position: absolute;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnsAndSearch2 {
+    width: 100%;
+    height: 100px;
+    background-color: #54b9c4;
+    position: absolute;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    width: 80%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.secondBox {
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.addVegeRes {
+    width: 130px;
+    height: 55px;
+    border: none;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+    /* margin-right: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #0096FF;
+    border-radius: 15px;
+    padding-right: 12px;
+    /* margin-right: 50px; */
+
+}
+
+.searchOuterRes {
+    width: 400px;
+    height: 55px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    padding-left: 10px;
+    /* margin-right: 50px; */
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logoutRes {
+    height: 55px;
+    width: 150px;
+}
+
+.crossIcon {
+    width: 60px;
+    height: 50px;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crossIcon i {
+    font-size: 45px;
+    color: white;
+}
