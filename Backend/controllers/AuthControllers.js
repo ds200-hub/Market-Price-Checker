@@ -93,7 +93,7 @@ const Logout = (req, res) => {
     });
     res.clearCookie("role", {
         httpOnly: true,
-        secure: false,
+        secure: isProduction,
         sameSite: isProduction ? "none" : "lax",
     });
     res.json({ status: true, message: "Logout Successfully" });
