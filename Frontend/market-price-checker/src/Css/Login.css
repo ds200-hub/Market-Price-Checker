@@ -216,6 +216,7 @@ p .link {
 #link h1 {
     font-weight: 400;
     font-size: 23px;
+    user-select: none;
 }
 
 .guestInfo {

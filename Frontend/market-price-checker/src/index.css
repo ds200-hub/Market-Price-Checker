@@ -545,4 +545,7 @@ body::-webkit-scrollbar {
     width: 80% !important;
     height: 200px !important;
   }
+  .warningPara{
+    font-size: 45px !important;
+  }
 }
