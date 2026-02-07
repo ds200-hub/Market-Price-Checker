@@ -29,18 +29,16 @@ const Signup = async (req, res, next) => {
 
         const isProduction = process.env.NODE_ENV === "production";
         res.cookie("token", token, {
-            withCredentials: true,
             httpOnly: true,
-            maxAge: 1 * 24 * 60 * 60 * 1000,
+            maxAge: 1 * 24 * 60 * 60 * 1000, // cookie ms mein work krta hai.
             secure: isProduction,
-            sameSite: isProduction ? "strict" : "lax"
+            sameSite: isProduction ? "none" : "lax"
         });
         res.cookie("role", roleToken, {
-            withCredentials: true,
             httpOnly: true,
             maxAge: 1 * 24 * 60 * 60 * 1000,
             secure: isProduction,
-            sameSite: isProduction ? "strict" : "lax"
+            sameSite: isProduction ? "none" : "lax"
         });
         res.status(201).json({ message: "User signed in successfully", success: true, shopkeeper });
         next();
@@ -69,18 +67,16 @@ const Login = async (req, res, next) => {
 
     const isProduction = process.env.NODE_ENV === "production";
     res.cookie("token", token, {
-        withCredentials: true,
         httpOnly: true,
         maxAge: 1 * 24 * 60 * 60 * 1000, // cookie ms mein work krta hai.
         secure: isProduction,
-        sameSite: isProduction ? "strict" : "lax"
+        sameSite: isProduction ? "none" : "lax"
     });
     res.cookie("role", roleToken, {
-        withCredentials: true,
         httpOnly: true,
         maxAge: 1 * 24 * 60 * 60 * 1000,
         secure: isProduction,
-        sameSite: isProduction ? "strict" : "lax"
+        sameSite: isProduction ? "none" : "lax"
     });
     res.status(201).json({ message: `Welcome ${shopkeeper.Name} logged in successfully`, success: true });
 
@@ -89,15 +85,16 @@ const Login = async (req, res, next) => {
 
 
 const Logout = (req, res) => {
+    const isProduction = process.env.NODE_ENV === "production";
     res.clearCookie("token", {
         httpOnly: true,
-        secure: false,
-        samesite: "lax",
+        secure: isProduction,
+        sameSite: isProduction ? "none":"lax",
     });
     res.clearCookie("role", {
         httpOnly: true,
         secure: false,
-        samesite: "lax",
+        sameSite: isProduction ? "none" : "lax",
     });
     res.json({ status: true, message: "Logout Successfully" });
 }
