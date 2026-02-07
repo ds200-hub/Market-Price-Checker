@@ -206,6 +206,9 @@ p .link {
     text-decoration: none;
     color: gray;
 }
+#link:hover{
+    cursor: pointer;
+}
 
 #link i {
     font-size: 25px;

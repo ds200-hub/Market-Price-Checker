@@ -112,6 +112,23 @@
     margin-right: 50px;
 
 }
+.addVege:hover{
+    cursor: pointer;
+}
+.searchOuter:hover{
+    cursor: pointer;
+}
+.logoutbtn{
+    cursor: pointer;
+}
+
+.addVegeRes:hover{
+    cursor: pointer;
+}
+.searchOuterRes:hover{
+    cursor: pointer;
+}
+
 
 
 .addIcon {
@@ -146,6 +163,9 @@
 .hamburgerBtn {
     font-size: 40px;
     color: white;
+}
+.hamburgerBtn {
+    cursor: pointer;
 }
 
 .btnsAndSearch {
@@ -233,4 +253,8 @@
 .crossIcon i {
     font-size: 45px;
     color: white;
+}
+
+.crossIcon i:hover{
+    cursor: pointer;
 }
