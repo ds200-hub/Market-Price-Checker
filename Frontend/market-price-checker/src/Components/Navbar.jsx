@@ -117,7 +117,7 @@ function Navbar({ search, setSearch }) {
                             </div>
                         </div>
                         <div className="crossIcon">
-                            <i className="fa-solid fa-xmark" onClick={handleHamburgerClick} ></i>
+                            <i class="fa-solid fa-circle-xmark"  onClick={handleHamburgerClick}></i>
                         </div>
                     </div>
                 )}
