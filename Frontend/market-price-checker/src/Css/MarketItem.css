@@ -180,3 +180,12 @@ b {
     color: #54b9c4;
     font-weight: 600;
 }
+.trend{
+    color: #54b9c4;
+}
+.trend:hover{
+    cursor: pointer;
+}
+p span {
+    font-size: 20px;
+}

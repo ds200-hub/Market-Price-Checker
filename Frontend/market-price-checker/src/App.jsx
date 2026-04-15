@@ -6,6 +6,7 @@ import ShopkeeperWrapper from './Components/ShopkeeperWrapper';
 import Edit from './Components/Edit';
 import AddListing from './Components/AddListing';
 import { ToastContainer } from 'react-toastify';
+import GraphWrapper from './PriceGraph/GraphWrapper';
 
 
 function App() {
@@ -14,15 +15,21 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navigate to='/login' replace></Navigate>}></Route>
+          <Route path="*" element={<Navigate to="/login" replace />} />
           <Route path="/Login" element={<Login ></Login>}></Route>
           <Route path="/Signup" element={<Signup ></Signup>}></Route>
           <Route path="/ShopkeeperWrapper" element={<ShopkeeperWrapper></ShopkeeperWrapper>}></Route>
           <Route path="/marketItems/itemListing" element={<AddListing></AddListing>}></Route>
           <Route path="/marketItems/EditPrice/:id" element={<Edit></Edit>}></Route>
-          <Route path="*" element={<Navigate to="/login" replace />} />
+          <Route path="/marketItems/trendAnalyze/:id" element={<GraphWrapper></GraphWrapper>}></Route>
         </Routes>
       </BrowserRouter>
       <ToastContainer className="custom-toast-container" />
+      {/* <div className="App" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <div style={{ width: '60vw', marginBottom: '2em' }}>
+          <LineChart />
+        </div>
+      </div> */}
     </>
   )
 }

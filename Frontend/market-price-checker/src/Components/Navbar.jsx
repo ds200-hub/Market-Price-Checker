@@ -71,7 +71,7 @@ function Navbar({ search, setSearch }) {
                                     <h2 className="add">Add</h2>
                                 </button>
                                 <div className="searchOuter" >
-                                    <i class="fa-solid fa-magnifying-glass searchLogo"></i>
+                                    <i className="fa-solid fa-magnifying-glass searchLogo"></i>
                                     <input type="text" placeholder="Search Item..." className="searchInput" value={search} onChange={handleOnChange} />
                                 </div>
                                 <div className="logout">
@@ -90,7 +90,7 @@ function Navbar({ search, setSearch }) {
 
                                 <div className="searchSection2" >
                                     <div className="searchOuter2" >
-                                        <i class="fa-solid fa-magnifying-glass searchLogo"></i>
+                                        <i className="fa-solid fa-magnifying-glass searchLogo"></i>
                                         <input type="text" placeholder="Search Item..." className="searchInput" value={search} onChange={handleOnChange} />
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@ function Navbar({ search, setSearch }) {
                     <div className={hamclass}>
                         <div className="box">
                             <div className="searchOuterRes">
-                                <i class="fa-solid fa-magnifying-glass searchLogo"></i>
+                                <i className="fa-solid fa-magnifying-glass searchLogo"></i>
                                 <input type="text" placeholder="Search Item..." className="searchInput" value={search} onChange={handleOnChange} />
                             </div>
                             <div className="secondBox">
@@ -117,7 +117,7 @@ function Navbar({ search, setSearch }) {
                             </div>
                         </div>
                         <div className="crossIcon">
-                            <i class="fa-solid fa-circle-xmark"  onClick={handleHamburgerClick}></i>
+                            <i className="fa-solid fa-circle-xmark"  onClick={handleHamburgerClick}></i>
                         </div>
                     </div>
                 )}

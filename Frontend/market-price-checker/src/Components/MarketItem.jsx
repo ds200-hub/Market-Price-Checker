@@ -63,11 +63,14 @@ function MarketItem({ search }) {
     }
     const filterItem = marketItem.filter((item) => {
         return item.itemName.toLowerCase().includes((search || "").toLowerCase());
-    })
+    });
+    const handleOnTrend = (item) => {
+        navigate(`/marketItems/trendAnalyze/${item._id}`);
+    }
     return (
         <>
             <div className="contentBody">
-                
+
                 {filterItem.length === 0 && (
                     <div className="warningDiv">
                         <p className="warningPara">Item Not Found</p>
@@ -75,13 +78,14 @@ function MarketItem({ search }) {
                 )}
 
                 {filterItem.map((item) => (
+
                     <div className="itemCard" key={item._id}>
                         <div className="leftSectionCard">
                             <img src={item.imageUrl} loading="lazy" alt="tomato image" className="Img" />
                         </div>
                         <div className="centerSectionCard">
                             <h1 className="itemName">{item.itemName}</h1>
-                            <p className="infoPart">Common</p>
+                            <p className="infoPart"><span>Analyze Trend</span><i className="fa-solid fa-chart-line trend" onClick={() => { handleOnTrend(item) }}></i></p>
                             <p className="infoPart">Updated 10 min ago</p>
                         </div>
                         <div className="rightSectionCard">
