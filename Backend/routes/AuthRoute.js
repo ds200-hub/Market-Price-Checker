@@ -7,6 +7,7 @@ const deleteItem = require("../controllers/DeleteItemController.js");
 const router = require("express").Router();
 
 const { upload } = require("../cloudConfig.js");
+const PlotGraph = require("../controllers/PlotGraph.js");
 
 router.post("/Signup", Signup);
 router.post("/Login", Login);
@@ -14,6 +15,7 @@ router.post("/Logout", Logout);
 router.post("/Verify", userVerification);
 router.post("/verifyRole", roleVerification);
 router.get("/marketItems", MarketItem);
+router.get("/marketItems/trendAnalyze/:id", PlotGraph);
 router.post("/marketItems/addItemListing",upload.single('image'), addItemListing);
 router.get("/marketItems/EditPrice/:id", Edit);
 router.put("/marketItems/EditPrice/item-price-update/:id", upload.single('image'), itemUpdate);

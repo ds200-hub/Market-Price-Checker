@@ -1,9 +1,11 @@
 const { cloudinary } = require("../cloudConfig.js");
 const MarketItemModel = require("../models/MarketItemModel.js");
+const PriceHistoryModel = require("../models/PriceHistoryModel.js");
 
 const deleteItem = async (req, res) => {
     const { id } = req.params;
     try {
+        const priceHistory = await PriceHistoryModel.deleteMany({item_id: id});
         const item = await MarketItemModel.findById(id);
         if(item.imagePublicId){
             await cloudinary.uploader.destroy(`demo/${item.imagePublicId}`);

@@ -1,4 +1,5 @@
 const MarketItemModel = require("../models/MarketItemModel.js");
+const PriceHistoryModel = require("../models/PriceHistoryModel.js");
 
 const Edit = async (req, res) => {
     const { id } = req.params;
@@ -41,7 +42,13 @@ const itemUpdate = async (req, res) => {
         }
 
         const savedItem = await item.save();
-        console.log(savedItem);
+
+        let newPriceHistory = new PriceHistoryModel({
+            item_id: id,
+            price: price,
+        });
+
+        const savedPriceHistory = newPriceHistory.save();
 
         return res.status(200).json({ success: true, message: "Item Updated Successfully", data: item });
     }

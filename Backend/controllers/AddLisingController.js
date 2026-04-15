@@ -1,4 +1,5 @@
 const MarketItemModel = require("../models/MarketItemModel.js");
+const PriceHistoryModel = require("../models/PriceHistoryModel.js");
 
 const addItemListing = async (req, res) => {
     const { itemName, price } = req.body;
@@ -21,7 +22,13 @@ const addItemListing = async (req, res) => {
         imagePublicId: req.file.filename.replace("demo/", "")
     });
     const savedItem = await newMarketItem.save();
-    console.log(savedItem);
+
+    let newPriceHistory = new PriceHistoryModel({
+        item_id: savedItem._id,
+        price: savedItem.price
+    });
+    const savedPriceHistory = await newPriceHistory.save();
+
     return res.status(200).json({ success: true, message: "item is successfully added" });
 }
 

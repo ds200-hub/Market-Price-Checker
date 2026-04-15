@@ -15,7 +15,7 @@ const validateSignupData = (data) => {
             .required(),
 
         Email: Joi.string()
-            .email()
+            .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net', 'in'] } })
             .min(5)
             .max(50)
             .required(),
