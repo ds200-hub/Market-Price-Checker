@@ -25,11 +25,6 @@ function App() {
         </Routes>
       </BrowserRouter>
       <ToastContainer className="custom-toast-container" />
-      {/* <div className="App" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <div style={{ width: '60vw', marginBottom: '2em' }}>
-          <LineChart />
-        </div>
-      </div> */}
     </>
   )
 }

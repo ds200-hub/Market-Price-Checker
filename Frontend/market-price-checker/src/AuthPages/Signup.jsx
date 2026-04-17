@@ -34,7 +34,7 @@ function Signup() {
             if (success) {
                 handleSuccess(message);
                 setTimeout(() => {
-                    navigate("/ShopkeeperWrapper");
+                    navigate("/ShopkeeperWrapper", {replace: true});
                 }, 1000);
             }
             else {
