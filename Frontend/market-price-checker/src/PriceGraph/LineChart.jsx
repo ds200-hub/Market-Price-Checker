@@ -11,12 +11,14 @@ Chart.register([LineElement, CategoryScale, LinearScale, PointElement, LineContr
 
 const LineChart = () => {
   const [priceHistory, setPriceHistory] = useState([]);
+  const [name, setName] = useState();
   const { id } = useParams();
   useEffect(() => {
     const fetchData = async () => {
       try {
         const graphData = await axios.get(`${BASE_URL}/marketItems/trendAnalyze/${id}`);
         setPriceHistory(graphData.data.priceData);
+        setName(graphData.data.itemName);
       }
       catch (error) {
         console.log(error);
@@ -51,7 +53,7 @@ const LineChart = () => {
 
   return (
     <div>
-      <h1 className='chartHeading' style={{ color: '#805AD5' }}>Line Chart</h1>
+      <h1 className='chartHeading' style={{ color: '#805AD5' }}>{name} Price Chart</h1>
       <Line data={data}/>
     </div>
   );
